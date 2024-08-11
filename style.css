@@ -1,9 +1,53 @@
 /*
 Reset to 0;
 */
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.071);
+  background-color: white;
+  color: rgb(50, 50, 50);
+}
+
+/* arrange nav in a row side by side. */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav,
+a {
+  margin-top: 10px;
+  background-color: rgb(211, 209, 209);
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.topnav a {
+  /* border: 5px solid blue; */
+  margin: 10px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+/* hover effect*/
+.topnav a:hover {
+  border-bottom: 3px solid black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submenu {
+  display: none;
+  background-color: #712222;
+  border: 2px solid #ddd;
+}
+
+li.hover > .submenu {
+  display: block;
 }

@@ -10,22 +10,28 @@
         <link rel="stylesheet" href="style.css">
         <script src="app.js" async defer></script>
         <!-- imports-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     </head>
 
-    <h1 class="title is-1">Home Page</h1>
+    <h1 class="pageTitle">Aptly</h1>
     <header>
         <!-- navigation bar -->
-        <nav class="level">
-            <div class="tabs is-medium">
-                <ul>
-                    <li class="is-active"><a>Logo</a></li>
-                    <li><a>Home</a></li>
-                    <li><a>Book Appointment</a></li>
-                    <li><a>Contact</a></li>
-                    <li><a>Profile</a></li>
-                </ul>
-            </div>
+        <nav class="topnav">
+            <a>Logo</a>
+            <a>Home</a>
+            <a>Book Appointment</a>
+            <!-- <ul class="submenu">
+                <li><a>Search/Select Provider</a></li>
+                <li><a>Provider Calendar View</a></li>
+                </ul> -->
+            <a>Contact</a>
+            <a>Profile</a>
+            <!-- <ul class="submenu">
+                    <li><a>[User Information]</a></li>
+                    <li><a>[Settings]</a></li>
+                    <li><a>[Logout]</a></li>
+                </ul> -->
+
+            <!-- search bar   -->
             <div class="level-item">
                 <div class="field has-addons">
                     <p class="control">
@@ -34,8 +40,8 @@
                     <p class="control">
                         <button class="button">Search</button>
                     </p>
+                    <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
-            </div>
 
         </nav>
     </header>
