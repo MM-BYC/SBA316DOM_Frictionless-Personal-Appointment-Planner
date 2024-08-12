@@ -3,8 +3,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white;
-  color: rgb(50, 50, 50);
+  /* background-color: white; */
+  /* color: rgb(50, 50, 50); */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -36,6 +36,10 @@ ul {
   color: white;
   padding: 10px 15px;
   transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+a.menuItem {
+  color: white;
 }
 
 .topnav ul li:hover {
