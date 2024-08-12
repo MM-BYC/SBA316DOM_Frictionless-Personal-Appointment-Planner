@@ -89,7 +89,9 @@ a.profileItem {
   display: block; /* Only show when hovering over the parent li */
 }
 
-/* Dropdown book styling */
+/* Dropdown book styling 
+ul
+*/
 ul .dropdownBookContent {
   display: none; /* Hide by default */
   position: absolute;

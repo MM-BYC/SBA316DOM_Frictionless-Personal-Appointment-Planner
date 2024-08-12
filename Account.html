@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="account.css">
-        <script src="app.js" async defer></script>
+        <script src="account.js" async defer></script>
         <!-- imports-->
     </head>
 
@@ -19,9 +19,9 @@
             <ul>
                 <li>Logo</li>
                 <li><a class="menuItem" href="#home">Home</a></li>
-                <li>
+                <li class="dropdownBook">
                     <a class="menuItem" href="#book">Book Appointment</a>
-                    <ul class="dropdownContent">
+                    <ul class="dropdownBookContent">
                         <li><a href="#" class="bookItem">Search Provider</a></li>
                         <li><a href="#" class="bookprofileItem">Select Date</a></li>
                     </ul>
@@ -40,9 +40,16 @@
     </header>
     <!-- body -->
 
+    <!-- Date Placeholder -->
+    <div id="dateContainer"></div>
+
     <!-- Account maintenance -->
     <div class="accountContainer">
         <h1>Account Profile</h1>
+        <p id="acctFirstName">First Name:</p>
+        <p id="acctLastName">Last Name:</p>
+
+        <!-- Registration -->
         <p>Please provide your information below.</p>
         <!-- Registration Form -->
         <fieldset>
@@ -55,14 +62,16 @@
                 <span class="input-icon"><i class="fa-solid fa-key"></i></span><br />
                 <input name="passwordCheck" type="text" placeholder="Repeat Password" />
                 <span class="input-icon"><i class="fa-solid fa-key"></i></span><br /><br />
-
+                <input type="submit" value="Register" />
             </form>
 
         </fieldset>
-    </div>
+        </p>
+        <!-- Vendors List-->
+        <p class="vendorsList">Preferred vendors:</p>
 
-    <body>
+        <body>
 
-    </body>
+        </body>
 
 </html>
