@@ -1,0 +1,236 @@
+/* Reset to 0 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: white; */
+  /* color: rgb(50, 50, 50); */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+ul {
+  background-color: rgb(64, 64, 61);
+  padding: 0;
+  margin: 0;
+}
+
+/* Target ul inside topnav */
+.topnav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+/* Target li inside ul inside topnav */
+.topnav ul li {
+  position: relative; /* Important for dropdown positioning */
+  border-bottom: 3px solid transparent;
+  font-size: 1.2em;
+  background-color: rgb(64, 64, 61);
+  color: white;
+  padding: 10px 15px;
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+a.menuItem {
+  color: white;
+}
+
+.topnav ul li:hover {
+  background-color: brown;
+  border-bottom: 3px solid rgb(113, 0, 25);
+}
+
+/* Dropdown content styling */
+ul .dropdownContent {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%; /* Position the dropdown just below the parent */
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+/* Ensure dropdown content is displayed vertically */
+.dropdownContent li {
+  list-style: none;
+  text-align: left;
+  background-color: white;
+}
+
+/* Style dropdown links */
+.dropdownContent li a {
+  background-color: whit;
+  text-decoration: none;
+  display: block;
+  padding: 12px 16px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+a.profileItem {
+  color: black;
+  background-color: white;
+}
+.dropdownContent li:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.topnav ul li.dropdown:hover .dropdownContent {
+  display: block; /* Only show when hovering over the parent li */
+}
+
+/* account style sheet */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Calibri;
+}
+.accountContainer {
+  /* border: 5px solid gray; */
+  text-align: center;
+  width: 40%;
+  margin: 20px auto;
+}
+.form-container {
+  position: absolute;
+  background: #eee;
+  display: flex;
+  width: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+  user-select: none;
+}
+
+.form-container > div {
+  width: 300px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.form-container h1 {
+  /* color: #0097a7; */
+  margin: 0px 5px;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.form-container form {
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.form-container p {
+  padding: 5px 10px;
+  margin: 2.5px 0px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 250px;
+  padding: 7px 7px 7px 40px;
+  margin: 5px 0px;
+  outline: 1px solid #888;
+  border: 0px solid #0000;
+  border-radius: 5px;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+  outline: 2px solid #ffab40;
+}
+
+.form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.form-container label {
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"] {
+  margin-left: auto;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  /* background: #55ecfc; */
+  cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+  background: #ffab40;
+}
+
+.form-container .input-icon {
+  position: absolute;
+  left: 10px;
+  margin: 5px 0px;
+  width: 30px;
+  height: 29px;
+  background: #ddd;
+  outline: 1px solid #888;
+  border-right: 0px solid #0000;
+  border-radius: 5px 0px 0px 5px;
+  text-align: center;
+  line-height: 29px;
+}
+
+.form-container input:focus + .input-icon {
+  color: #ffab40;
+  outline: 2px solid #ffab40;
+  margin: 5px 0px;
+}
+
+a {
+  color: #0097a7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffab40;
+}
+
+#errorDisplay {
+  position: absolute;
+  background: #fcc;
+  color: red;
+  display: flex;
+  width: 500px;
+  left: 50%;
+  top: calc(50% + 180px);
+  transform: translate(-50%, 0%);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  padding: 20px;
+  display: none;
+}
+
+/* Account page styling */
+.accountHeading {
+  margin: 10px;
+  text-align: center;
+}
