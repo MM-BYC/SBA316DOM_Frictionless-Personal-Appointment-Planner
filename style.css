@@ -69,13 +69,17 @@ ul .dropdownContent {
 
 /* Style dropdown links */
 .dropdownContent li a {
-  color: black;
+  background-color: whit;
   text-decoration: none;
   display: block;
   padding: 12px 16px;
   white-space: nowrap; /* Prevent text wrapping */
 }
 
+a.profileItem {
+  color: black;
+  background-color: white;
+}
 .dropdownContent li:hover {
   background-color: #ddd;
 }
@@ -84,4 +88,9 @@ ul .dropdownContent {
 .topnav ul li.dropdown:hover .dropdownContent {
   display: block; /* Only show when hovering over the parent li */
 }
-/* dropmenu ends*/
+
+/* Account page styling */
+.accountHeading {
+  margin: 10px;
+  text-align: center;
+}
