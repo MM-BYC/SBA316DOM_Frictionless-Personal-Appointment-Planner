@@ -1,6 +1,4 @@
-/*
-Reset to 0;
-*/
+/* Reset to 0 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,24 +15,26 @@ Reset to 0;
 
 ul {
   background-color: rgb(64, 64, 61);
+  padding: 0;
+  margin: 0;
 }
 
-/* target ul inside topnav*/
+/* Target ul inside topnav */
 .topnav ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap; /*responsive*/
   justify-content: space-evenly;
+  padding: 10px;
 }
-/*target li inside ul inside topnav*/
+
+/* Target li inside ul inside topnav */
 .topnav ul li {
-  /* border: 5px solid brown; */
+  position: relative; /* Important for dropdown positioning */
   border-bottom: 3px solid transparent;
-  width: fit-content;
   font-size: 1.2em;
   background-color: rgb(64, 64, 61);
   color: white;
-  margin: 0 15px;
+  padding: 10px 15px;
   transition: all 0.3s ease; /* Add transition for smooth hover effect */
 }
 
@@ -43,34 +43,41 @@ ul {
   border-bottom: 3px solid rgb(113, 0, 25);
 }
 
-/* dropmenu*/
-
-.dropmenu {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar ul li a:hover,
-.dropdown:hover .dropmenu {
-  background-color: #111;
-}
-
-.dropdown-content {
-  display: none;
+/* Dropdown content styling */
+ul .dropdownContent {
+  display: none; /* Hide by default */
   position: absolute;
+  top: 100%; /* Position the dropdown just below the parent */
+  left: 0;
+  background-color: white;
   min-width: 160px;
-  z-index: 1;           
+  z-index: 1;
+  border: 1px solid #ccc;
+  padding: 0;
 }
 
-.dropdown-content li a {
+/* Ensure dropdown content is displayed vertically */
+.dropdownContent li {
+  list-style: none;
+  text-align: left;
+  background-color: white;
+}
+
+/* Style dropdown links */
+.dropdownContent li a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  padding: 12px 16px;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
+.dropdownContent li:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.topnav ul li.dropdown:hover .dropdownContent {
+  display: block; /* Only show when hovering over the parent li */
+}
 /* dropmenu ends*/
