@@ -30,7 +30,7 @@ ul {
 /* Target li inside ul inside topnav */
 .topnav ul li {
   position: relative; /* Important for dropdown positioning */
-  border-bottom: 3px solid transparent;
+  /* border-bottom: 3px solid transparent; */
   font-size: 1.2em;
   background-color: rgb(64, 64, 61);
   color: white;
@@ -44,7 +44,7 @@ a.menuItem {
 
 .topnav ul li:hover {
   background-color: brown;
-  border-bottom: 3px solid rgb(113, 0, 25);
+  border-bottom: 3px solid yellow;
 }
 
 /* Dropdown content styling */
