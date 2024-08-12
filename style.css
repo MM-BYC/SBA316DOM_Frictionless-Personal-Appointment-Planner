@@ -7,47 +7,70 @@ Reset to 0;
   padding: 0;
   background-color: white;
   color: rgb(50, 50, 50);
-}
-
-/* arrange nav in a row side by side. */
-.topnav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.topnav,
-a {
-  margin-top: 10px;
-  background-color: rgb(211, 209, 209);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .pageTitle {
   text-align: center;
 }
 
-.topnav a {
-  /* border: 5px solid blue; */
-  margin: 10px;
-  width: fit-content;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
+ul {
+  background-color: rgb(64, 64, 61);
+}
+
+/* target ul inside topnav*/
+.topnav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; /*responsive*/
+  justify-content: space-evenly;
+}
+/*target li inside ul inside topnav*/
+.topnav ul li {
+  /* border: 5px solid brown; */
   border-bottom: 3px solid transparent;
+  width: fit-content;
+  font-size: 1.2em;
+  background-color: rgb(64, 64, 61);
+  color: white;
+  margin: 0 15px;
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
 }
 
-/* hover effect*/
-.topnav a:hover {
-  border-bottom: 3px solid black;
-  cursor: pointer;
-  font-weight: bold;
+.topnav ul li:hover {
+  background-color: brown;
+  border-bottom: 3px solid rgb(113, 0, 25);
 }
 
-.submenu {
-  display: none;
-  background-color: #712222;
-  border: 2px solid #ddd;
-}
+/* dropmenu*/
 
-li.hover > .submenu {
+.dropmenu {
   display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
+.navbar ul li a:hover,
+.dropdown:hover .dropmenu {
+  background-color: #111;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;           
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* dropmenu ends*/
