@@ -6,6 +6,7 @@ acctFirstName.innerHTML += " Michael";
 
 const acctLastName = document.querySelector("#acctLastName");
 acctLastName.innerHTML += " Marquez";
+acctLastName.style.marginBottom = "20px";
 
 /* Preferred vendors */
 const vendors = [
@@ -57,8 +58,8 @@ dateContainer.prepend(dateParagraph);
 const registrationForm = document.querySelector("#RegistrationForm");
 registrationForm.addEventListener("submit", (event) => {
   // Stops the browser from automatically refreshing
-    event.preventDefault();
-      // Variables
+  event.preventDefault();
+  // Variables
   const userNameInput = document.querySelector('input[name="username"]');
   const userNamePattern =
     /^(?=(?:.*([a-zA-Z0-9]))(?:.*(?!\1)[a-zA-Z0-9]))[a-zA-Z0-9]{4,}$/;
@@ -115,4 +116,3 @@ function validateEmail(email) {
 
   return isValidFormat && isNotTheExampleDomain;
 }
-});
